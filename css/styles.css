@@ -1,0 +1,143 @@
+/* Eliminamos los márgenes y rellenos por defecto en elementos comunes como el cuerpo, títulos y párrafos */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Configuramos la fuente y otros estilos básicos para el cuerpo del documento */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Estilizamos el encabezado de la página, que tendrá un fondo oscuro y texto blanco centrado */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Aplicamos estilos generales al contenido principal */
+main {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Estilizamos el contenedor de la cita */
+#quote-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 220px; /* Definimos una altura mínima para el contenedor de la cita */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilizamos el texto de la cita */
+#quote-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center; /* Centramos el texto */
+}
+
+/* Estilizamos el autor de la cita */
+#author {
+    font-style: italic;
+    color: #666;
+    text-align: center; /* Centramos el texto */
+}
+
+/* Estilizamos la imagen del autor */
+#author-image {
+    max-width: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+/* Estilizamos el botón "Generar" */
+button {
+    background-color: #ff5e3a;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Aplicamos un cambio de color en el botón al pasar el cursor por encima */
+button:hover {
+    background-color: #ff4020;
+}
+
+/* Estilizamos para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Ajustamos el relleno y el tamaño del texto en el contenedor de la cita */
+    #quote-container {
+        padding: 20px;
+    }
+    #quote-text {
+        font-size: 20px;
+    }
+    #author {
+        font-size: 16px;
+    }
+    /* Reducimos el tamaño máximo de la imagen del autor */
+    #author-image {
+        max-width: 100px;
+    }
+    /* Ajustamos el tamaño del botón y el relleno */
+    button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
+
+/* Estilizamos el pie de página, que tendrá un fondo oscuro y texto blanco, y se mantendrá en la parte inferior */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Agregamos una transición suave para el efecto hover en el texto de la cita */
+#quote-text:hover {
+    transform: scale(1.05); /* Cambiamos el valor para ajustar la expansión */
+    transition: transform 0.3s ease-in-out; /* Agregamos una transición suave */
+}
+
+/* Estilizamos el botón "Generar" para que se expanda y se mueva ligeramente hacia abajo al pasar el cursor por encima */
+#generate-button {
+    padding: 10px 20px; /* Ajustamos el espacio interior del botón según sea necesario */
+    margin-top: 10px; /* Ajustamos la distancia desde la parte superior según sea necesario */
+    transition: transform 0.3s ease-in-out, margin-top 0.3s ease-in-out; /* Agregamos transiciones suaves */
+}
+
+/* Agregamos un efecto de expansión al pasar el cursor por encima del botón */
+#generate-button:hover {
+    transform: scale(1.05); /* Expandimos el botón */
+    margin-top: 15px; /* Movemos el botón un poco más hacia abajo */
+}
+
+/* Estilizamos el enlace con clase "custom-link" para que sea blanco y sin subrayado */
+.custom-link {
+    text-decoration: none;
+    color: white;
+}
