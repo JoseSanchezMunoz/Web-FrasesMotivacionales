@@ -15,3 +15,18 @@
 - HTML
 - CSS
 - JavaScript
+
+## Uso
+
+1. Clona este repositorio a tu máquina local.
+2. Abre el archivo `index.html` en tu navegador web.
+3. Comienza a ver las mejores frases motivacionales.
+
+## Personalización
+
+Si deseas personalizar las frases, puedes hacerlo editando el archivo `script.js`.
+
+
+## Contacto
+
+[Mi perfil de GitHub](https://github.com/JoseSanchezMunoz).
